@@ -7,40 +7,46 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery-scrollto.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<div class="headerWrapper">
-		<div class="logo">
-			<a href="/"><img src="images/design/logo-idg.png" alt="Indev group"></a>
-		</div>
-		<div class="topNav">
-			<ul class="topNavList">
-				<li class="topNavItem"><a href="#section1">Компания</a></li>
-				<li class="topNavItem"><a href="#section2">Цели</a></li>
-				<li class="topNavItem"><a href="#section3">Услуги</a></li>
-				<li class="topNavItem"><a href="#section4">Технологии</a></li>
-				<li class="topNavItem"><a href="#section5">Контакты</a></li>
-				<li class="topNavItem"><a href="#section6">Клиенты</a></li>
-			</ul>
+	<div class="header">
+		<div class="headerWrapper">
+			<div class="logo">
+				<a href="/"><img src="images/design/logo-idg.png" alt="Indev group"></a>
+			</div>
+			<div class="topNav">
+				<ul class="topNavList">
+					<li class="topNavItem"><a href="#section1">Компания</a></li>
+					<li class="topNavItem"><a href="#section2">Цели</a></li>
+					<li class="topNavItem"><a href="#section3">Услуги</a></li>
+					<li class="topNavItem"><a href="#section4">Технологии</a></li>
+					<li class="topNavItem"><a href="#section5">Контакты</a></li>
+					<li class="topNavItem"><a href="#section6">Клиенты</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="contentWrapper">
 		<div class="sloganBlock">
 			Как ракету запустить!
 		</div>
-		<div class="contentBlock company">
+		<div class="contentBlock company" id="section1">
 			<h2><a name="section1" class="sectionIcon"></a>Компания</h2>
 			<div class="sectionText">
 				<p>Наша компания существет совсем недавно, что совсем не помешало под нашими крыльями сильную команду способную справиться с любыми задачами и успешно этим заниматься. Дается нам это несложно, потому что мы очень любим свою работу.</p>
 			</div>
 		</div>
-		<div class="contentBlock mission">
+		<div class="contentBlock mission" id="section2">
 			<h2><a name="section2" class="sectionIcon"></a>Цели</h2>
 			<div class="sectionText">
 				<p>Не ну а цели-то у нас — обзавидуешься!</p>
 			</div>
 		</div>
-		<div class="contentBlock services">
+		<div class="contentBlock services" id="section3">
 			<h2><a name="section3" class="sectionIcon"></a>Услуги</h2>
 			<div class="sectionText">
 				<h3>Дизайн</h3>
@@ -55,7 +61,7 @@
 				<p>Мы имеем опыт создания эффективных социальных проектов, которые помогают менять жизнь всех нас к лучшему.</p>
 			</div>
 		</div>
-		<div class="contentBlock technology">
+		<div class="contentBlock technology" id="section4">
 			<h2><a name="section4" class="sectionIcon"></a>Технологии</h2>
 			<div class="sectionText">
 				<p>В нашем распоряжении команда дизайнеров, программистов, сценаристов, балерин и прочих любопытных экземпляров.</p>
@@ -75,19 +81,39 @@
 				</ul>
 			</div>
 		</div>
-		<div class="contentBlock contacts">
+		<div class="contentBlock contacts" id="section5">
 			<h2><a name="section5" class="sectionIcon"></a>Контакты</h2>
 			<div class="sectionText">
-				<p>Сязаться с нами можно тысячью способами, например:</p>
-				<p>e-mail: <a href="mailto:idea@indev-group.ru">idea@indev-group.ru</a></p>
+				<p>Сязаться с нами можно тысячью способами, например:<br>
+				e-mail: <a href="mailto:idea@indev-group.ru">idea@indev-group.ru</a></p>
 			</div>
 		</div>
-		<div class="contentBlock clients">
+		<div class="contentBlock clients" id="section6">
 			<h2><a name="section6" class="sectionIcon"></a>Клиенты</h2>
 			<div class="sectionText">
 				<p>Получают удовольствие от работы с нами:</p>
-				
+				<div class="slidesWrapper">
+					<div class="slidesView" id="partners">
+						<ul class="slidesList">
+							<li><a href="/"><img src="images/partner1.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner2.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner3.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner4.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner5.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner1.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner2.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner3.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner4.png" alt=""/></a></li>
+							<li><a href="/"><img src="images/partner5.png" alt=""/></a></li>
+						</ul>
+					</div>
+					<a href="#" class="prevSlide" id="partnersprev">&lt;</a>
+					<a href="#" class="nextSlide" id="partnersnext">&gt;</a>
+				</div>
 			</div>
+		</div>
+		<div class="footer">
+			<p>© Copyright 2012 – 2013 indev-group.ru All Rights Reserved</p>
 		</div>
 	</div>
 </body>
