@@ -1,0 +1,97 @@
+/*Reset css section */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;	padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+a:active, a:focus, img{outline:none;}
+
+
+/*Main template styles*/
+html, body{height:100%;text-align:center;}
+body{
+	background:#282e3a;
+	font-family:Cambria,Tahoma,Georgia,sans-serif;
+	font-style:normal;
+	color:#000000;
+	font-size:16px;
+	line-height:22px;
+	}
+
+p,ul,ol{
+	margin:1.5em 0;
+	padding:0;
+	text-align:left;
+	}
+ul,ol{
+	padding:0 0 0 0px;
+	}
+
+h1,h2,h3,h4,h5,h6{
+	margin:1em 0;
+	text-align:left;
+	font-weight:normal;
+	}
+h1{
+	font-size:28px;
+	line-height:30px;
+	}
+h2{
+	font-size:24px;
+	line-height:30px;
+	}
+h3{
+	font-size:21px;
+	line-height:28px;
+	}
+h4{
+	font-size:18px;
+	line-height:20px;
+	}
+h5{
+	font-size:16px;
+	line-height:20px;
+	}
+
+strong{
+	font-weight:bold;
+	}
+em{
+	font-style:italic;
+	}
+
+td{
+	vertical-align:top;
+	}
+
+a{
+	color:#878787;
+	text-decoration:underline;
+	cursor:pointer;
+	}
+a:hover{
+	color:#72643a;
+	text-decoration:none;
+	}
+
+.wrapper{
+	width:960px;
+	margin:0 auto;
+	height:auto !important;
+	padding:0;
+	text-align:center;
+	}
+
+.hidden{
+	display:none;
+	visibility:hidden;
+	}
+.clear{
+	float:none;
+	clear:both;
+	overflow:hidden;
+	padding:1px 0;
+	}
