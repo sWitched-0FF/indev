@@ -342,4 +342,7 @@ a:hover{
 	.slidesList li{
 		width:145px;
 	}
+	.sloganBlock{
+		background:url(../images/design/slogan1280.png) center center no-repeat;
+		}
 }
